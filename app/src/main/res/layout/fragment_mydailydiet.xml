@@ -1,0 +1,93 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="40dp"
+    tools:context=".MydailydietFragment">
+
+
+    <TextView
+        android:id="@+id/category"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Select food category:" />
+    <Spinner
+        android:id="@+id/category_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <TextView
+        android:id="@+id/fooditem"
+        android:layout_margin="@dimen/activity_vertical_margin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Select food item"/>
+    <Spinner
+        android:id="@+id/fooditem_spinner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+    <TextView
+        android:id="@+id/addfood"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="If not found, add food item you want"
+        android:textSize="15sp"/>
+
+    <EditText
+        android:id="@+id/addfooditem"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:gravity="center_horizontal"
+        android:hint="e.g. apple"
+        android:textSize="15sp"/>
+    <Button
+        android:id="@+id/searchfooditemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Search" />
+
+    <TextView
+        android:id="@+id/information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:text="Food Information:"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/iteminfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:textSize="15sp"/>
+
+    <Button
+        android:id="@+id/addfooditemBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="ADD" />
+
+    <ImageView
+        android:id="@+id/foodimg"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:gravity="center_horizontal"/>
+    <TextView
+        android:id="@+id/test"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/registerBtn" />
+
+
+</LinearLayout>

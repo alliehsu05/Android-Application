@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_marginTop="40dp"
+        android:padding="@dimen/activity_horizontal_margin">
+
+        <TextView
+            android:id="@+id/report"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20dp"
+            android:text="REPORT" />
+
+        <DatePicker
+            android:id="@+id/datePicker"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:datePickerMode="spinner"
+            android:calendarViewShown="false"
+            android:layout_below="@id/report" />
+
+        <Button
+            android:id="@+id/pieBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/datePicker"
+            android:layout_marginLeft="100dp"
+            android:text="Create Pie Chart" />
+
+        <EditText
+            android:id="@+id/startdate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/pieBtn"
+            android:hint="Start Date (yyyy-MM-dd)"
+            android:singleLine="true" />
+        <EditText
+            android:id="@+id/enddate"
+            android:layout_width="250dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startdate"
+            android:hint="End Date (yyyy-MM-dd)"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/barBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/enddate"
+            android:layout_marginLeft="100dp"
+            android:text="Create Bar Chart" />
+
+        <TextView
+            android:id="@+id/ttest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/barBtn"
+            android:textSize="15dp" />
+
+        <com.github.mikephil.charting.charts.PieChart
+            android:id="@+id/pieChart"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/ttest"
+            />
+
+        <com.github.mikephil.charting.charts.BarChart
+            android:id="@+id/barChart"
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:layout_below="@id/pieChart"
+            />
+
+
+    </RelativeLayout>
+</ScrollView>
